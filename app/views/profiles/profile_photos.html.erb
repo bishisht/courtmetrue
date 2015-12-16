@@ -20,8 +20,9 @@
                         <div class="col-xs-6 col-md-3 thumb">
                           <span class="thumbnail">
                             <%= image_tag p.object.photo(:thumb), class: "img-responsive" %>
+
                             <%= p.input :photo, :multiple => true, as: :file, label: false %>
-                             <%= button_to "Set Profile Picture"  %> 
+                             <%= button_to "Set Profile Picture", :action=> "set_profile_picture", :controller=> "profiles"%>
                             <%= p.check_box :_destroy, class: "removePhoto" %>
                           </span>
                         </div>

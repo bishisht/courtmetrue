@@ -20,6 +20,7 @@
 </ul>
 <ul class="nav navbar-nav navbar-right">
     <% if user_signed_in? %>
+      
       <li><%= link_to 'My Profile', user_path(current_user) %></li>
       <li><%= link_to 'Edit Profile', profile_path(:basic_info) %></li>
       <li><%= link_to 'Edit account', edit_user_registration_path %></li>

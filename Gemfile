@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.2.2'
 gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -19,7 +19,7 @@ gem 'devise'
 gem 'enum_help'
 gem 'high_voltage'
 gem 'simple_form'
-gem 'upmin-admin'
+gem 'upmin-admin' #not under active development
 gem 'thread_safe'
 group :development do
   gem 'better_errors'

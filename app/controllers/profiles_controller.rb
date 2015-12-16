@@ -43,6 +43,11 @@ class ProfilesController < ApplicationController
     render_wizard @profile
   end
 
+  def set_profile_picture
+    self.profile_picture_id = profile.photo.id
+
+  end
+
   private
     def get_user
       @user = current_user
@@ -59,7 +64,7 @@ class ProfilesController < ApplicationController
                                       :selfbio, :ideal, :tandc,
                                       :gender, :status, :education, :profile_heading,
                                       :expectations, courtship_preference_ids: [],
-                                      profile_photos_attributes: [:id, :profile_id, :photo, :_destroy])
+                                      profile_photos_attributes: [:id, :profile_id, :photo, :_destroy, :is_admin])
     end
 
 end
